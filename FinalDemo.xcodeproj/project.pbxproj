@@ -10,6 +10,7 @@
 		0469FCC702B4C5BA64EFD3BA /* Pods_FinalDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F064D575F8EA4B4CA9912CFE /* Pods_FinalDemoTests.framework */; };
 		937A165868122ECCEE246A05 /* Pods_FinalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7666A10C6B8B556C8781C /* Pods_FinalDemo.framework */; };
 		AE2B9AE64DEBCB8E82DC4620 /* Pods_FinalDemo_FinalDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257E347E54F1425ECDDD21E7 /* Pods_FinalDemo_FinalDemoUITests.framework */; };
+		B03BE75D26AA098D0052DB65 /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BE75C26AA098D0052DB65 /* location.swift */; };
 		B09D1A13269E4BF000D5EBC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D1A12269E4BF000D5EBC1 /* AppDelegate.swift */; };
 		B09D1A15269E4BF000D5EBC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D1A14269E4BF000D5EBC1 /* SceneDelegate.swift */; };
 		B09D1A17269E4BF000D5EBC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D1A16269E4BF000D5EBC1 /* ViewController.swift */; };
@@ -109,6 +110,7 @@
 		2DD5522B6228B7022A794E72 /* Pods-FinalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemo.release.xcconfig"; path = "Target Support Files/Pods-FinalDemo/Pods-FinalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4BE6FE38273871DFD0E10A17 /* Pods-FinalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemo.debug.xcconfig"; path = "Target Support Files/Pods-FinalDemo/Pods-FinalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7603C9CBD966C2266786A169 /* Pods-FinalDemo-FinalDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemo-FinalDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-FinalDemo-FinalDemoUITests/Pods-FinalDemo-FinalDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B03BE75C26AA098D0052DB65 /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
 		B09D1A0F269E4BF000D5EBC1 /* FinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09D1A12269E4BF000D5EBC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09D1A14269E4BF000D5EBC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB8A0DFF74051E11ABDDD67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -257,6 +266,7 @@
 				B09D1A12269E4BF000D5EBC1 /* AppDelegate.swift */,
 				B09D1A14269E4BF000D5EBC1 /* SceneDelegate.swift */,
 				B09D1A16269E4BF000D5EBC1 /* ViewController.swift */,
+				B03BE75C26AA098D0052DB65 /* location.swift */,
 				B09D1A8D269F874C00D5EBC1 /* Stream.swift */,
 				B09D1A18269E4BF000D5EBC1 /* Main.storyboard */,
 				B09D1A1E269E4BF100D5EBC1 /* Assets.xcassets */,
@@ -396,6 +406,7 @@
 			buildPhases = (
 				B09D1A45269F761900D5EBC1 /* Resources */,
 				B09D1A80269F761B00D5EBC1 /* Embed App Extensions */,
+				EB8A0DFF74051E11ABDDD67C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -686,6 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03BE75D26AA098D0052DB65 /* location.swift in Sources */,
 				B09D1A17269E4BF000D5EBC1 /* ViewController.swift in Sources */,
 				B09D1A1D269E4BF000D5EBC1 /* FinalDemo.xcdatamodeld in Sources */,
 				B09D1A13269E4BF000D5EBC1 /* AppDelegate.swift in Sources */,
@@ -858,6 +870,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -912,6 +925,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

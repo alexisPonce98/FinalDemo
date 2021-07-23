@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please allow SuperLive to access your location in order to hhave the locaitn map available for stream</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow SuperLive to access your location in order to hhave the locaitn map available for stream</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow SuperLive to access your location in order to have the location map available for stream</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Allow FinalDemo to access front and back cameras to be able to stream and show a preview</string>
 	<key>NSMicrophoneUsageDescription</key>

@@ -72,7 +72,7 @@ public class AudioCodec {
             logger.info(actualBitrate)
         }
     }
-    var channels: UInt32 = AudioCodec.defaultChannels
+var channels: UInt32 = AudioCodec.defaultChannels
     var formatDescription: CMFormatDescription? {
         didSet {
             guard !CMFormatDescriptionEqual(formatDescription, otherFormatDescription: oldValue) else {
