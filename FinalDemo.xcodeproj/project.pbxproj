@@ -32,6 +32,8 @@
 		B09D1A78269F761B00D5EBC1 /* FinalDemoHeartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D1A77269F761B00D5EBC1 /* FinalDemoHeartUITests.swift */; };
 		B09D1A7C269F761B00D5EBC1 /* FinalDemoHeart.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B09D1A47269F761900D5EBC1 /* FinalDemoHeart.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B09D1A8E269F874C00D5EBC1 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D1A8D269F874C00D5EBC1 /* Stream.swift */; };
+		B0FD4F5C26B328CD00C326DC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD4F5B26B328CD00C326DC /* HealthKit.framework */; };
+		B0FD4F5F26B32D8000C326DC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD4F5E26B32D8000C326DC /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,10 @@
 		B09D1A77269F761B00D5EBC1 /* FinalDemoHeartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalDemoHeartUITests.swift; sourceTree = "<group>"; };
 		B09D1A79269F761B00D5EBC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09D1A8D269F874C00D5EBC1 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		B0FD4F5A26B328CC00C326DC /* FinalDemoHeart Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FinalDemoHeart Extension.entitlements"; sourceTree = "<group>"; };
+		B0FD4F5B26B328CD00C326DC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		B0FD4F5D26B32D8000C326DC /* FinalDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalDemo.entitlements; sourceTree = "<group>"; };
+		B0FD4F5E26B32D8000C326DC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BB1E93D9AD8D84DC85B3C426 /* Pods-FinalDemo-FinalDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemo-FinalDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinalDemo-FinalDemoUITests/Pods-FinalDemo-FinalDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D228CA30DA0C933E65EA2F9E /* Pods-FinalDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-FinalDemoTests/Pods-FinalDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E309616FBCB953A8531067BD /* Pods-FinalDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalDemoTests.release.xcconfig"; path = "Target Support Files/Pods-FinalDemoTests/Pods-FinalDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937A165868122ECCEE246A05 /* Pods_FinalDemo.framework in Frameworks */,
+				B0FD4F5F26B32D8000C326DC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FD4F5C26B328CD00C326DC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +231,8 @@
 		92D7E8B3ACA180AE91ADDD68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0FD4F5E26B32D8000C326DC /* HealthKit.framework */,
+				B0FD4F5B26B328CD00C326DC /* HealthKit.framework */,
 				2DC7666A10C6B8B556C8781C /* Pods_FinalDemo.framework */,
 				257E347E54F1425ECDDD21E7 /* Pods_FinalDemo_FinalDemoUITests.framework */,
 				F064D575F8EA4B4CA9912CFE /* Pods_FinalDemoTests.framework */,
@@ -263,6 +273,7 @@
 		B09D1A11269E4BF000D5EBC1 /* FinalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B0FD4F5D26B32D8000C326DC /* FinalDemo.entitlements */,
 				B09D1A12269E4BF000D5EBC1 /* AppDelegate.swift */,
 				B09D1A14269E4BF000D5EBC1 /* SceneDelegate.swift */,
 				B09D1A16269E4BF000D5EBC1 /* ViewController.swift */,
@@ -308,6 +319,7 @@
 		B09D1A57269F761A00D5EBC1 /* FinalDemoHeart Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B0FD4F5A26B328CC00C326DC /* FinalDemoHeart Extension.entitlements */,
 				B09D1A58269F761A00D5EBC1 /* InterfaceController.swift */,
 				B09D1A5A269F761A00D5EBC1 /* ExtensionDelegate.swift */,
 				B09D1A5C269F761A00D5EBC1 /* NotificationController.swift */,
@@ -936,6 +948,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalDemo/FinalDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579DX7MBBF;
 				INFOPLIST_FILE = FinalDemo/Info.plist;
@@ -947,6 +960,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -956,6 +970,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinalDemo/FinalDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579DX7MBBF;
 				INFOPLIST_FILE = FinalDemo/Info.plist;
@@ -967,6 +982,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -1074,7 +1090,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1094,7 +1110,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -1102,6 +1118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FinalDemoHeart Extension/FinalDemoHeart Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579DX7MBBF;
 				INFOPLIST_FILE = "FinalDemoHeart Extension/Info.plist";
@@ -1116,7 +1133,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1124,6 +1141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FinalDemoHeart Extension/FinalDemoHeart Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579DX7MBBF;
 				INFOPLIST_FILE = "FinalDemoHeart Extension/Info.plist";
@@ -1138,7 +1156,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};

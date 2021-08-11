@@ -35,6 +35,10 @@ class Stream:NSObject{
         ]
         self.rtmpConnection.connect("rtmps://a.rtmps.youtube.com/live2/", arguments: nil);
         self.rtmpStream.publish("a96x-69j1-4e7u-zqg9-ac2g");
+//        let streamURL = "rtmps://030c054ffef4.global-contribute.live-video.net:443/app/"
+//        let pub = "sk_us-east-1_j2IQHDjSZbcm_BpLZpO7esixBxSgqg9RTdH6jlpXV4P"
+//        self.rtmpConnection.connect(streamURL, arguments: nil)
+//        self.rtmpStream.publish(pub)
         self.rtmpStream.attachAudio(nil)
         self.rtmpStream.attachCamera(nil)
     }
@@ -56,7 +60,6 @@ class Stream:NSObject{
             self.rtmpStream.appendSampleBuffer(recievedSample, withType: .video);
 
         }else{
-            print("Trying to append audio");
             self.rtmpStream.appendSampleBuffer(recievedSample, withType: .audio);
         }
     }

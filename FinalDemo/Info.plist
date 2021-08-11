@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>Saves temp file to be able to save video to phone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Need to access to save photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Will save the stream to users phot library</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Please allow SuperLive to access your location in order to hhave the locaitn map available for stream</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
