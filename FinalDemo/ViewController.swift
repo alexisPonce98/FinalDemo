@@ -48,6 +48,12 @@ class ViewController: UIViewController, StreamDelegate, RPScreenRecorderDelegate
     var didWorkoutStart = false;
     //health store variables
     var healthStore:HKHealthStore!
+    var fistLocation:CLLocation!
+    var secondLocation:CLLocation!
+    var isFirstLocationInDistanceTracking = true;
+    var workoutDistance = 0.0;
+    
+    @IBOutlet weak var distanceLabel: UILabel!
     
     //Watch Session variable decl
     var watchSession:WCSession?
@@ -691,6 +697,31 @@ extension ViewController:CLLocationManagerDelegate{
             let polyline = MKPolyline(coordinates: self.globalLocationsCoordinates, count: self.globalLocationsCoordinates.count
             )
             self.mapView.addOverlay(polyline)
+            if(self.isFirstLocationInDistanceTracking){
+                self.fistLocation = CLLocation(latitude: (location.coordinate.latitude), longitude: location.coordinate.longitude);
+                self.workoutDistance = 0;
+                print("Woekout distance \(workoutDistance)")
+                self.isFirstLocationInDistanceTracking = false;
+                DispatchQueue.main.async {
+                    self.distanceLabel.text = "\(self.workoutDistance)"
+                }
+                
+            }else{
+                self.secondLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude);
+                self.workoutDistance += secondLocation.distance(from: self.fistLocation);
+                self.fistLocation = secondLocation;
+                
+                DispatchQueue.main.async {
+                    self.distanceLabel.text = "\(self.workoutDistance)"
+                }
+                
+            }
+        }else{
+            self.isFirstLocationInDistanceTracking = true;
+            self.workoutDistance = 0.0;
+            DispatchQueue.main.async {
+                self.distanceLabel.text = "\(self.workoutDistance)"
+            }
         }
         
         // initialize the mapView

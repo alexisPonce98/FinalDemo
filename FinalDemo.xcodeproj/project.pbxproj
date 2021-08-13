@@ -319,8 +319,8 @@
 		B09D1A57269F761A00D5EBC1 /* FinalDemoHeart Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B0FD4F5A26B328CC00C326DC /* FinalDemoHeart Extension.entitlements */,
 				B09D1A58269F761A00D5EBC1 /* InterfaceController.swift */,
+				B0FD4F5A26B328CC00C326DC /* FinalDemoHeart Extension.entitlements */,
 				B09D1A5A269F761A00D5EBC1 /* ExtensionDelegate.swift */,
 				B09D1A5C269F761A00D5EBC1 /* NotificationController.swift */,
 				B09D1A5E269F761A00D5EBC1 /* ComplicationController.swift */,
